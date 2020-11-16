@@ -6,9 +6,19 @@ const Component = () => {
 
   return (
     <div className="ui card">
-      <div className="content">
-        <div className="header">Count</div>
-        <div className="meta">{count}</div>
+      <div className="content content-wrap">
+        <a href="/" className="ui olive right ribbon label">
+          PullState
+        </a>
+        <div className="description">
+          <div className="ui statistic">
+            <div className="value">{count}</div>
+            <div className="label">
+              <i className="ui icon stopwatch" />
+              Clicks
+            </div>
+          </div>
+        </div>
       </div>
       <div className="extra content central">
         <div className="ui buttons fluid">
